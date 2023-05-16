@@ -45,16 +45,36 @@ function promptUppercase() {
   return passwordUppercase;
 }
 
+function promptSpecialCharacters() {
+  var passwordSpecialCharacters = confirm(
+    'Would you like to include special characters in your password?'
+  );
+
+  return passwordSpecialCharacters;
+}
+
+function promptNumeric() {
+  var passwordNumeric = confirm(
+    'Would you like to include numbers in your password?'
+  );
+
+  return passwordNumeric;
+}
+
 function createPasswordOptions() {
   var answers = {
     length: null,
     lowercase: null,
     uppercase: null,
+    specialcharacters: null,
+    numeric: null,
   };
 
   answers.length = promtPasswordLength();
   answers.lowercase = promptLowercase();
   answers.uppercase = promptUppercase();
+  answers.specialcharacters = promptSpecialCharacters();
+  answers.numeric = promptNumeric();
 
   console.log(answers);
 }
