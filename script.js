@@ -1,8 +1,3 @@
-// Assignment code here
-
-// Get references to the #generate element
-
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
@@ -19,9 +14,9 @@ function promtPasswordLength() {
     'How long would you like your password to be? (Must be 10 - 128 characters in length)'
   );
 
-  if (passwordLength < 10 || passwordLength > 128) {
+  if (passwordLength < 8 || passwordLength > 128) {
     alert(
-      'please try again, password length must be 10 - 128 characters in length'
+      'please try again, password length must be 8 - 128 characters in length'
     );
     return null;
   }
