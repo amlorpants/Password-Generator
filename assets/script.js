@@ -28,14 +28,12 @@ function generatePassword() {
     );
   }
 
-  console.log(result);
-
   // returns generated password
   return result;
 }
 
+// password length function
 function promtPasswordLength() {
-  // ask user again if they say no
   var passwordLength = prompt(
     'How long would you like your password to be? (Must be 10 - 128 characters in length)'
   );
@@ -51,6 +49,7 @@ function promtPasswordLength() {
   }
 }
 
+// lowercase function
 function promptLowercase() {
   var passwordLowercase = confirm(
     'Would you like to include lowercase characters in your password?'
@@ -63,6 +62,7 @@ function promptLowercase() {
   }
 }
 
+// uppercase function
 function promptUppercase() {
   var passwordUppercase = confirm(
     'Would you like to include uppercase characters in your password?'
@@ -75,6 +75,7 @@ function promptUppercase() {
   }
 }
 
+// special character function
 function promptSpecialCharacters() {
   var passwordSpecialCharacters = confirm(
     'Would you like to include special characters in your password?'
@@ -86,13 +87,13 @@ function promptSpecialCharacters() {
   }
 }
 
+// number function
 function promptNumeric() {
   var passwordNumeric = confirm(
     'Would you like to include numbers in your password?'
   );
 
   if (passwordNumeric === true) {
-    // concatenate acceptable chars string with numberic string
     acceptableCharacters = acceptableCharacters.concat(numbers);
   }
 }
