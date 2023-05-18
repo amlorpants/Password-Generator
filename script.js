@@ -13,13 +13,15 @@ function writePassword() {
   passwordText.value = password;
 }
 
+//  produce console logs throughout the doc to check where it is breaking
+
 function generatePassword() {
   // sets length and acceptable characters
   getPasswordOptions();
 
   // generates random password
-  let result = ' ';
-  const charactersLength = acceptableCharacters.desiredLength;
+  let result = '';
+  const charactersLength = acceptableCharacters.length;
   for (let i = 0; i < desiredLength; i++) {
     result += acceptableCharacters.charAt(
       Math.floor(Math.random() * charactersLength)
@@ -55,7 +57,9 @@ function promptLowercase() {
   );
 
   if (passwordLowercase === true) {
-    acceptableCharacters.concat(lowercaseCharacters);
+    acceptableCharacters = acceptableCharacters.concat(
+      lowercaseCharacters
+    );
   }
 }
 
@@ -65,7 +69,9 @@ function promptUppercase() {
   );
 
   if (passwordUppercase === true) {
-    acceptableCharacters.concat(uppercaseCharacters);
+    acceptableCharacters = acceptableCharacters.concat(
+      uppercaseCharacters
+    );
   }
 }
 
@@ -75,7 +81,8 @@ function promptSpecialCharacters() {
   );
 
   if (passwordSpecialCharacters === true) {
-    acceptableCharacters.concat(specialCharacters);
+    acceptableCharacters =
+      acceptableCharacters.concat(specialCharacters);
   }
 }
 
@@ -86,7 +93,7 @@ function promptNumeric() {
 
   if (passwordNumeric === true) {
     // concatenate acceptable chars string with numberic string
-    acceptableCharacters.concat(numbers);
+    acceptableCharacters = acceptableCharacters.concat(numbers);
   }
 }
 
