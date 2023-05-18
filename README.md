@@ -15,3 +15,5 @@ URL: https://amlorpants.github.io/Password-Generator/
 Amy Taylor
 
 ## Visual
+
+![Screenshot 2023-05-18 at 11-23-22 Password Generator](https://github.com/amlorpants/Password-Generator/assets/87711695/71bca723-35db-4d6a-8099-5bfe6621efc2)
