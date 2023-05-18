@@ -8,7 +8,7 @@ This challenge required me to make a password genrator using my new understandin
 
 ## Links
 
-URL:https://github.com/amlorpants/Amy-Taylor-Portfolio.git
+URL: https://amlorpants.github.io/Password-Generator/
 
 ## Contributors
 
